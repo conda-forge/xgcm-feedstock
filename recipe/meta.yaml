@@ -1,4 +1,4 @@
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: xgcm
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/x/xgcm/xgcm-{{ version }}.tar.gz
-  sha256: 1eb5e716530b63fbe7da129fd20fa85451c527f61230df172e419eb100ce2f63
+  sha256: 0bc42b291808495f5ef225156ad744ef79daaf3d22e337630bb09d51b76a3c33
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
@@ -33,7 +33,7 @@ test:
 about:
   home: https://github.com/xgcm/xgcm
   license: MIT
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
+  license_file: LICENSE
   summary: General Circulation Model Postprocessing with xarray
 
 extra:
