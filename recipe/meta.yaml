@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: xgcm
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/x/xgcm/xgcm-{{ version }}.tar.gz
-  sha256: 0bc42b291808495f5ef225156ad744ef79daaf3d22e337630bb09d51b76a3c33
+  sha256: 6473874f227fc26affc3b7cb6cc31bcf772570bb63218b832937e7ddc6a0d2ac
 
 build:
   number: 0
