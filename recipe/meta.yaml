@@ -24,7 +24,7 @@ requirements:
     - dask
     - numpy
     - future
-    - docrep<=0.2.7 #Should be released once xgcm/#207 is solved
+    - docrep <=0.2.7 #Should be released once xgcm/#207 is solved
 
 test:
   imports:
