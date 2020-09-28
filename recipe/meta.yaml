@@ -11,24 +11,27 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
-    - pytest-runner
   run:
-    - python
-    - xarray
-    - dask
-    - numpy
+    - python >=3.6
+    - docrep <=0.2.7
     - future
-    - docrep <=0.2.7 #Should be released once xgcm/#207 is solved
+    - numpy
+    - xarray >=0.14.1
+    - dask
 
 test:
   imports:
     - xgcm
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/xgcm/xgcm
