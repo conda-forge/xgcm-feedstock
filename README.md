@@ -5,11 +5,9 @@ Home: https://github.com/xgcm/xgcm
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xgcm-feedstock/blob/master/LICENSE.txt)
 
 Summary: General Circulation Model Postprocessing with xarray
-
-
 
 Current build status
 ====================
