@@ -21,7 +21,6 @@ requirements:
   run:
     - python >=3.6
     - dask
-    - docrep <=0.2.7
     - future
     - numpy
     - xarray >=0.14.1
