@@ -1,4 +1,4 @@
-{% set version = "0.5.2" %}
+{% set version = "0.6.0" %}
 
 package:
   name: xgcm
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/x/xgcm/xgcm-{{ version }}.tar.gz
-  sha256: 104724222a193474093acce1232f93dc31caea86eb6e299006dad6a2a06c37e8
+  sha256: 2d14b3a69a0694edf26dfaee1e9f7310148eb3837880ae2da0f2214c0ffbffed
 
 build:
   number: 0
@@ -21,7 +21,6 @@ requirements:
   run:
     - python >=3.6
     - dask
-    - docrep <=0.2.7
     - future
     - numpy
     - xarray >=0.14.1
