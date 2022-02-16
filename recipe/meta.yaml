@@ -15,15 +15,15 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
     - setuptools-scm
   run:
-    - python >=3.6
+    - python >=3.7
     - dask
     - future
     - numpy
-    - xarray >=0.14.1
+    - xarray >=0.17.0
 
 test:
   imports:
