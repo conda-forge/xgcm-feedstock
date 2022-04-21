@@ -9,21 +9,21 @@ source:
   sha256: a40d015544cdeb909d229fdb759587afb583f2e8106cfa50d12811507f2f978d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.9
     - pip
     - setuptools-scm
   run:
-    - python >=3.7
+    - python >=3.9
     - dask
     - future
     - numpy
-    - xarray >=0.17.0
+    - xarray >=0.20.0
 
 test:
   imports:
