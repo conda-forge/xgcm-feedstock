@@ -11,20 +11,21 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools
+    - setuptools >=61
+    - wheel
+    - setuptools-scm >=6.0
     - pip
-    - setuptools-scm
   run:
     - python >={{ python_min }}
-    - dask
-    - future
-    - numpy
     - xarray >=0.20.0
+    - dask-core
+    - numpy
+    - future
 
 test:
   imports:
