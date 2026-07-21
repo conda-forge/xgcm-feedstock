@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.10.0"
+  version: "0.10.1"
 
 package:
   name: xgcm
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/x/xgcm/xgcm-${{ version }}.tar.gz
-  sha256: b7f82b972b00567782ec05373ae0e8fdd994d63b6d3fba21489ab2cebd892f63
+  sha256: 7d3ee2ac859ff3821589b9a55f51b0867a1af688d687c54c5be5b289c4163c5f
 
 build:
   number: 0
